@@ -7,11 +7,11 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: linear-gradient(to right, #82caff, #a0eaff); /* Fundo gradiente azul claro */
+            background: linear-gradient(to right, #82caff, #a0eaff);
             margin: 0;
             padding: 0;
             text-align: center;
-            animation: moveGradient 10s linear infinite; /* Animação do gradiente */
+            animation: moveGradient 10s linear infinite;
         }
         @keyframes moveGradient {
             0% {
@@ -63,7 +63,7 @@
     <h1>DataMed</h1>
 
     <h2>Cadastro de Médicos</h2>
-    <form action="/cadastrar_medico" method="POST">
+    <form action="database.php" method="POST">
         <label for="nome">Nome:</label>
         <input type="text" id="nome" name="nome">
 
@@ -79,9 +79,10 @@
         <label for="email">Email:</label>
         <input type="email" id="email" name="email">
 
-        <input type="submit" value="Cadastrar" href="...">
+        <input type="submit" value="Cadastrar">
     </form>
 
     <footer>TheLab©</footer>
 </body>
 </html>
+
