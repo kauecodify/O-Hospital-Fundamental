@@ -1,4 +1,4 @@
-<h2> *DATAMED* </h2>
+<h2> DATAMED </h2>
 
 <h3>Este projeto visa a construção de uma rede de cadastros para pacientes de uma rede médica e médicos locais, alocando a necessidade do usuário com base em médicos disponíveis e rede do convênio médico.</h3>
 
