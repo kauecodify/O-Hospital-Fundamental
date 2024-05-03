@@ -5,5 +5,5 @@
 Diagrama ER >> Funcionamento do sistema...
 ![Diagram_medical](https://github.com/kauecodify/O-Hospital-Fundamental/assets/143859403/dc092837-da4f-4534-9d4a-ff06a6373319)
 
-Diagrama ER >> Atribuição da Ala Internações
+<h2>Diagrama ER - Atribuição da ALA INTERNAÇÕES PT2 </h2>
 ![Diagram medical PT2](Diagram_medicalPT2.drawio.png)
