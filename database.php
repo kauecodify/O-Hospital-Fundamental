@@ -1,29 +1,36 @@
 <?php
 
-$servername = "localhost";
-$username = "seu_usuario";
-$password = "sua_senha";
-$database = "seu_banco_de_dados";
+// DEFINE O DATABASE
+$host = "localhost";
+$username = "your_username";
+$password = "your_password";
+$database = "your_database_name";
 
-$conn = new mysqli($servername, $username, $password, $database);
+// conectar ao database
+$conn = mysqli_connect($host, $username, $password, $database);
 
-if ($conn->connect_error) {
-    die("Falha na conexão: " . $conn->connect_error);
+// checar conexão
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
 }
 
-$nome = $_POST['nome'];
-$cpf = $_POST['cpf'];
-$endereco = $_POST['endereco'];
-$telefone = $_POST['telefone'];
-$email = $_POST['email'];
+// extrair dados
+$nome = $_POST["nome"];
+$cpf = $_POST["cpf"];
+$endereco = $_POST["endereco"];
+$telefone = $_POST["telefone"];
+$email = $_POST["email"];
 
+// inserir no database
 $sql = "INSERT INTO medicos (nome, cpf, endereco, telefone, email) VALUES ('$nome', '$cpf', '$endereco', '$telefone', '$email')";
 
-if ($conn->query($sql) === TRUE) {
+if (mysqli_query($conn, $sql)) {
     echo "Médico cadastrado com sucesso!";
 } else {
-    echo "Erro ao cadastrar médico: " . $conn->error;
+    echo "Erro ao cadastrar médico: " . mysqli_error($conn);
 }
 
-$conn->close();
+// fechar conexão
+mysqli_close($conn);
+
 ?>
