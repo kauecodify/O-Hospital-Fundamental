@@ -13,3 +13,6 @@
 
 **PARTE 3 - Alimentando o banco de dados**
 ![Mysql](medpt3.sql)
+
+**PARTE 4 - ADICIONANDO MÉDICOS ATIVOS E INATIVOS**
+![Mysql](medpt4.sql)
