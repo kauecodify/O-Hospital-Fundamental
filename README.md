@@ -10,3 +10,6 @@
 
 **DIAGRAMA ER - LÓGICO**
 ![Diagram medical - LOGIC](DiagramaER-LOGIC.png)
+
+**PARTE 3 - Alimentando o banco de dados**
+![Mysql](medpt3.sql)
