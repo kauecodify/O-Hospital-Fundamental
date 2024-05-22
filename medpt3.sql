@@ -1,3 +1,6 @@
+CREATE DATABASE IF NOT EXISTS Hospital;
+USE Hospital;
+
 -- Tabela de Especialidades
 CREATE TABLE Especialidade (
   ID INT AUTO_INCREMENT PRIMARY KEY,
