@@ -16,3 +16,6 @@
 
 **PARTE 4 - Adicionando médicos ativos e inativos**
 ![Mysql](medpt4.sql)
+
+**PARTE 5 - Consultas**
+![mySQL]()
